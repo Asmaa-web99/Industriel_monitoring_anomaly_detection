@@ -1,0 +1,19 @@
+project:
+  name: industriel_monitoring_anomaly_detection
+
+data:
+  raw_path: data/raw
+  processed_path: data/processed
+  sample_path: data/sample
+
+model:
+  name: isolation_forest
+  contamination: 0.03
+  random_state: 42
+
+inference:
+  anomaly_threshold: 0.8
+
+api:
+  host: 0.0.0.0
+  port: 8000
